@@ -127,7 +127,7 @@ $(function() {
     }
   });
 
-  bar.animate(0.8);
+  bar.animate(0.9);
 
   var bar = new ProgressBar.Circle(circleprog3, {
     strokeWidth: 7,
