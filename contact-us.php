@@ -302,7 +302,7 @@ if(isset($_SERVER['REQUEST_METHOD']) && strtolower($_SERVER['REQUEST_METHOD']) =
 
 function sendQuoteMail($to, $subject, $message)
 {
-	$headers  = "From: himanshukalal75451@gmail.com\r\n" .
+	$headers  = "From: info@himanshu75451.github.io\r\n" .
 	  "X-Mailer: php\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
