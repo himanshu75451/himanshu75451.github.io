@@ -809,17 +809,63 @@
                     </div>
                   </div> -->
 
-                  <!-- <div class="col-lg-12">
+                  <div class="col-lg-12">
                     <div class="art-section-title">
                       <div class="art-title-frame">
                         <h4>Get in touch</h4>
                       </div>
                     </div>
                     <div class="art-a art-card">
-                      <form id="form" class="art-contact-form">
+                      <form id="form" class="art-contact-form" action="contact-us.php" method="post" onsubmit="return validateForm()">
+                        <div class="art-form-field">
+                          <input class="art-input" type="text" placeholder="Your Name" id="name" name="name" required>
+                          <label for="name"><i class="fas fa-user"></i></label>
+                        </div>
+                        <div class="art-form-field">
+                          <input class="art-input" type="number" placeholder="Your Number" id="number" name="number" required>
+                          <label for="number"><i class="fas fa-phone"></i></label>
+                        </div>
+                        <div class="art-form-field">
+                          <input class="art-input"  type="email"  placeholder="Your Email" id="email" name="email" required>
+                          <label for="email"><i class="fas fa-at"></i></label>
+                        </div>
+                        <div class="art-form-field">
+                          <textarea class="art-input textarea" placeholder="Message" name="message" id="message" required></textarea>
+                          <label for="message"><i class="far fa-envelope"></i></label>
+                        </div>
+                        <div class="art-submit-frame">
+
+                          <!-- Add hidden fields for spam prevention -->
+                            <input type="hidden" name="email_address" value="">
+                            <input type="hidden" name="website" value="">
+                            
+                            <!-- <div style="margin-bottom: 15px;" class="g-recaptcha" data-sitekey="6LcTuxMqAAAAAE8NWVW6_5xN3XCVGooS5c-zhvHJ"></div>
+                            <span id="captcha" style="color:red"></span> -->
+
+                          <button class="art-btn art-btn-md art-submit" type="submit" name="submit" class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit'><span>Send message</span></button>
+                          <div class="art-success">Success <i class="fas fa-check"></i></div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                <!-- </div>
+
+
+                <div class="col-lg-12">
+                    <div class="art-section-title">
+                      <div class="art-title-frame">
+                        <h4>Get in touch</h4>
+                      </div>
+                    </div>
+                    <div class="art-a art-card">
+                      <form id="form" class="art-contact-form" >
                         <div class="art-form-field">
                           <input id="name" name="name" class="art-input" type="text" placeholder="Name" required>
                           <label for="name"><i class="fas fa-user"></i></label>
+                        </div>
+                        <div class="art-form-field">
+                          <input id="number" name="number" class="art-input" type="number" placeholder="Mobile No." required>
+                          <label for="number"><i class="fas fa-phone"></i></label>
                         </div>
                         <div class="art-form-field">
                           <input id="email" name="email" class="art-input" type="email" placeholder="Email" required>
@@ -835,8 +881,8 @@
                         </div>
                       </form>
                     </div>
-                  </div> -->
-                <!-- </div>
+                  </div>
+                  
               </div> -->
               <!-- container end -->
 
