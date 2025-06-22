@@ -236,9 +236,10 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
   margin-bottom: 5px;
 }
 
@@ -367,11 +368,10 @@ link
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   margin-top: 10px;
-  justify-content: end;
-  margin-bottom: -20px;
+  justify-content: start;
   gap: 6px;
-  font-size: 22px;
- margin-right: -20px;
+  font-size: 20px;
+  border-top: 1px solid #fafafc10;
 }
 
 .art-ls-social22 a {
@@ -388,34 +388,6 @@ link
   background-color: #fff;
 }
 
-
-#github{
-  margin-top: 25px;
-  margin-left: 30px;
-}
-
-#github-img > img{
-  width: 95%; 
-  margin: auto; 
-  margin: 0px 0px 30px 20px; 
-  border: 2px solid #646466; 
-  border-radius: 5px; 
-  box-sizing: border-box;
-}
-
-@media (max-width: 500px) {
-
-  #github{
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-
-  #github-img > img{
-    margin: 0px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-  }
-}
 
 /* line 200, ../scss/_common.scss */
 
@@ -2082,7 +2054,6 @@ content
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   padding: 30px;
-  margin: 0px -12px 30px -12px;
 }
 
 /* line 28, ../scss/_content.scss */
@@ -2793,6 +2764,7 @@ content
 .art-blog-card {
   position: relative;
   overflow: hidden;
+  
   -webkit-box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
   margin-bottom: 30px;
@@ -2821,9 +2793,10 @@ content
 /* line 588, ../scss/_content.scss */
 .art-blog-card .art-post-description {
   background: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
-  padding: 30px;
+  padding: 16px;
   position: relative;
   bottom: 0;
+  height: 100%;
 }
 
 /* line 597, ../scss/_content.scss */

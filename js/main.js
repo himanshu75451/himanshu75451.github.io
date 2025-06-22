@@ -247,24 +247,24 @@ $(function() {
     }
   });
 
-  bar.animate(.18);
+  bar.animate(.85);
 
-  // var bar = new ProgressBar.Line(lineprog4, {
-  //   strokeWidth: 1.72,
-  //   easing: 'easeInOut',
-  //   duration: 1400,
-  //   delay: 3100,
-  //   trailWidth: 1.72,
-  //   svgStyle: {
-  //     width: '100%',
-  //     height: '100%'
-  //   },
-  //   step: (state, bar) => {
-  //     bar.setText(Math.round(bar.value() * 100) + ' %');
-  //   }
-  // });
+  var bar = new ProgressBar.Line(lineprog10, {
+    strokeWidth: 1.72,
+    easing: 'easeInOut',
+    duration: 1400,
+    delay: 3100,
+    trailWidth: 1.72,
+    svgStyle: {
+      width: '100%',
+      height: '100%'
+    },
+    step: (state, bar) => {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  });
 
-  // bar.animate(.50);
+  bar.animate(.30);
 
   var bar = new ProgressBar.Line(lineprog400, {
     strokeWidth: 1.72,
